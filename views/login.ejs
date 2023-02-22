@@ -1,0 +1,17 @@
+<%- include('nav')  %>
+
+
+    <% if(message != ''){%>
+        <h1><%= message%></h1>
+    <%}%>
+
+    <form action="/login" method="post">
+
+        <input type="text" name="email" id="" placeholder="Email ...">
+        <input type="text" name="password" id="" placeholder="Password ...">
+        <input type="submit" value="Login">
+
+    </form>
+    
+</body>
+</html>
